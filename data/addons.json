@@ -1,0 +1,4870 @@
+[
+  {
+    "type": "PREFIX",
+    "word": "ec",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "is there any...that? does any?"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ne",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "not",
+      "verily",
+      "truely"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "nescio",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "one/someone or other"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "neu",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "nor",
+      "and..not",
+      "neither..nor"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "seu",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "or if"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "si",
+    "from": "PACK",
+    "to": "PACK",
+    "definitions": [
+      "if",
+      "when",
+      "in so much",
+      "even if"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "abs",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- away",
+      "off",
+      "- aside"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ab",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- away",
+      "off",
+      "- aside"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ac",
+    "from": "X",
+    "to": "X",
+    "connect": "c",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ac",
+    "from": "X",
+    "to": "X",
+    "connect": "q",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ad",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "aedi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "having to do with buildings/temples"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "aequi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "equi-",
+      "equal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "af",
+    "from": "X",
+    "to": "X",
+    "connect": "f",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ag",
+    "from": "X",
+    "to": "X",
+    "connect": "g",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "alti",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "high",
+      "lofty"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ambi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "around",
+      "round about",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "amb",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "around",
+      "round about",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "amphi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "having two/double",
+      "front and back"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "am",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "around",
+      "round about",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ante",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "ante-",
+      "- before"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "anti",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "anti-",
+      "counter-",
+      "against",
+      "contrary",
+      "opposite/opposed to",
+      "for ante-/before"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "an",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "around",
+      "round about",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ap",
+    "from": "X",
+    "to": "X",
+    "connect": "p",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "archi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "arch-",
+      "chief-",
+      "first",
+      "master",
+      "great",
+      "extremely",
+      "very"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "as",
+    "from": "X",
+    "to": "X",
+    "connect": "s",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "at",
+    "from": "X",
+    "to": "X",
+    "connect": "t",
+    "definitions": [
+      "- to",
+      "towards",
+      "near",
+      "for",
+      "together"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "auri",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "golden",
+      "gold-",
+      "of gold",
+      "gold-colored"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "au",
+    "from": "X",
+    "to": "X",
+    "connect": "f",
+    "definitions": [
+      "- away",
+      "off",
+      "- aside"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "a",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- away",
+      "off",
+      "- aside"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "bene",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "well",
+      "good"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "beni",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "well",
+      "good"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "bis",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "two",
+      "twice",
+      "double",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "bi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "two",
+      "twice",
+      "double",
+      "having two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "blandi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "sweet-",
+      "soothing-",
+      "smooth-",
+      "charming",
+      "flattering"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "cardio",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "cardio-",
+      "pertaining to the heart"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "centi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "hundred"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "centu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "hundred"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "circum",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- around",
+      "about",
+      "near"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "col",
+    "from": "X",
+    "to": "X",
+    "connect": "l",
+    "definitions": [
+      "- together",
+      "completely",
+      "forcibly",
+      "strongly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "com",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- together",
+      "completely",
+      "forcibly",
+      "strongly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "conn",
+    "from": "X",
+    "to": "X",
+    "connect": "e",
+    "definitions": [
+      "- together",
+      "completely",
+      "forcibly",
+      "strongly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "conn",
+    "from": "X",
+    "to": "X",
+    "connect": "i",
+    "definitions": [
+      "- together",
+      "completely",
+      "forcibly",
+      "strongly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "contra",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- against"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "con",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- together",
+      "completely",
+      "strongly",
+      "forcibly",
+      "violently"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "co",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- together",
+      "completely",
+      "strongly",
+      "forcibly",
+      "violently"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "decem",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "ten"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "decu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "ten"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "de",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- down",
+      "off",
+      "away",
+      "from",
+      "not",
+      "removal",
+      "reversal",
+      "utterly/completely"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "dif",
+    "from": "V",
+    "to": "V",
+    "connect": "f",
+    "definitions": [
+      "- apart/asunder",
+      "in different directions",
+      "separation/dispersal/process reversal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "dir",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- apart/asunder",
+      "in different directions",
+      "separation/dispersal/process reversal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "dis",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- apart/asunder",
+      "in different directions",
+      "separation/dispersal/process reversal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "di",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "two-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "di",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- apart/asunder",
+      "in different directions",
+      "separation/dispersal/process reversal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "duode",
+    "from": "NUM",
+    "to": "NUM",
+    "definitions": [
+      "- less two/two less than"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "duoet",
+    "from": "NUM",
+    "to": "NUM",
+    "definitions": [
+      "two more than"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "du",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "two"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ef",
+    "from": "V",
+    "to": "V",
+    "connect": "f",
+    "definitions": [
+      "- out",
+      "away from",
+      "beyond",
+      "completely"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "electro",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "electro-",
+      "electrical",
+      "electronic"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "extra",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- outside"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ex",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- out",
+      "away from",
+      "beyond",
+      "completely"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "e",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- out",
+      "away from",
+      "beyond",
+      "completely"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "inaequi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "umequal"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "inter",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "between",
+      "within",
+      "at intervals",
+      "to pieces"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "inter",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "between",
+      "within",
+      "at intervals",
+      "to pieces"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "intra",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "within",
+      "inside",
+      "- between",
+      "at intervals",
+      "to pieces"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "intro",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "within",
+      "inside",
+      "- between",
+      "at intervals",
+      "to pieces"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ig",
+    "from": "V",
+    "to": "V",
+    "connect": "n",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "II",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "two-",
+      "second",
+      "[IIviri/duoviri => 2 man board]"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "il",
+    "from": "V",
+    "to": "V",
+    "connect": "l",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "im",
+    "from": "V",
+    "to": "V",
+    "connect": "b",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "im",
+    "from": "V",
+    "to": "V",
+    "connect": "m",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "im",
+    "from": "V",
+    "to": "V",
+    "connect": "p",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "in",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "in",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "not -",
+      "un-",
+      "-less"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ir",
+    "from": "V",
+    "to": "V",
+    "connect": "r",
+    "definitions": [
+      "- in",
+      "- on",
+      "- against",
+      "not -",
+      "un-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "male",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "ill",
+      "bad"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "multi",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "much",
+      "many"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ne",
+    "from": "ADV",
+    "to": "ADV",
+    "definitions": [
+      "not"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "non",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "not"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ob",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- towards",
+      "to meet",
+      "in opposition"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "octu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "eight"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "of",
+    "from": "V",
+    "to": "V",
+    "connect": "f",
+    "definitions": [
+      "- towards",
+      "to meet",
+      "in opposition"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "omni",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "all-",
+      "- everywhere"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "op",
+    "from": "V",
+    "to": "V",
+    "connect": "p",
+    "definitions": [
+      "- towards",
+      "to meet",
+      "in opposition"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "os",
+    "from": "V",
+    "to": "V",
+    "connect": "t",
+    "definitions": [
+      "- towards",
+      "to meet",
+      "in opposition"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "per",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "very -",
+      "- completely",
+      "- thoroughly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "per",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- through",
+      "thoroughly",
+      "completely",
+      "very",
+      "adds to the force of the verb"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "por",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- forward"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "praeter",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "past or by"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "prae",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "pre-",
+      "before -",
+      "in front of -",
+      "forth",
+      "very -",
+      "- completely",
+      "- thorughly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "pro",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "before -",
+      "in front of -"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "pro",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- forward",
+      "before",
+      "in front of",
+      "forth [pro-cedo => go forth",
+      "proceed",
+      "continue]"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "pseudo",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "pseudo-",
+      "false",
+      "fallacious",
+      "deceitful",
+      "sperious",
+      "imitation of"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "quadri",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "four"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "quadru",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "four"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "quincu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "five"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "quinqu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "five"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "quinti",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "five"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "red",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- back",
+      "- again"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "re",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "- back",
+      "- again"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sed",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- apart",
+      "apart from",
+      "away"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "semi",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "semi-",
+      "half",
+      "partly"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "septem",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "seven"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "septu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "seven"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sesque",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "one and half",
+      "one plus aliquot fraction"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sesqui",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "one and half",
+      "one plus aliquot fraction"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sexqui",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "one and half",
+      "one plus aliquot fraction"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ses",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "six-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sexti",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "six"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sextu",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "six"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sex",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "six-"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sim",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "one",
+      "single",
+      "simple"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sub",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "sub-",
+      "- up to",
+      "- under",
+      "up from under",
+      "to the aid"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sub",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "sub-",
+      "somewhat -/-ish/rather -",
+      "under",
+      "from under/below",
+      "lesser/assistant/vice"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sub",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "sub-",
+      "somewhat -/-ish/rather -",
+      "under",
+      "from under/below",
+      "lesser/assistant/vice"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "suc",
+    "from": "V",
+    "to": "V",
+    "connect": "c",
+    "definitions": [
+      "- up to",
+      "- under",
+      "up from under",
+      "to the aid"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "suc",
+    "from": "N",
+    "to": "N",
+    "connect": "c",
+    "definitions": [
+      "sub-",
+      "somewhat -/-ish/rather -",
+      "under",
+      "from under/below",
+      "lesser/assistant/vice"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "suc",
+    "from": "ADJ",
+    "to": "ADJ",
+    "connect": "c",
+    "definitions": [
+      "sub-",
+      "somewhat -/-ish/rather -",
+      "under",
+      "from under/below",
+      "lesser/assistant/vice"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "super",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "super-",
+      "over",
+      "above",
+      "upon",
+      "from above",
+      "over and above"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "supra",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "supra-",
+      "over",
+      "above",
+      "upon",
+      "on top of",
+      "earlier than",
+      "beyond",
+      "superior to"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "superquadri",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "number plus 4/5",
+      "one plus aliquot fraction"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sur",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "super-",
+      "over",
+      "above"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "sus",
+    "from": "V",
+    "to": "V",
+    "connect": "s",
+    "definitions": [
+      "- up to",
+      "- under",
+      "up from under",
+      "to the aid"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "trans",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- across",
+      "- over"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "tra",
+    "from": "V",
+    "to": "V",
+    "definitions": [
+      "- across",
+      "- over"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "tre",
+    "from": "V",
+    "to": "V",
+    "connect": "i",
+    "definitions": [
+      "- across",
+      "- over"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "tri",
+    "from": "X",
+    "to": "X",
+    "definitions": [
+      "three"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ultra",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "beyond",
+      "exceeding",
+      "over",
+      "more than"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ultra",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "extremely",
+      "more",
+      "overly",
+      "more than"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "unde",
+    "from": "NUM",
+    "to": "NUM",
+    "definitions": [
+      "- less one",
+      "one less than"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "uni",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "one-",
+      "having  one ~",
+      "of one ~"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "ve",
+    "from": "ADJ",
+    "to": "ADJ",
+    "definitions": [
+      "not-",
+      "without",
+      "very"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "V",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "five-",
+      "fifth"
+    ]
+  },
+  {
+    "type": "PREFIX",
+    "word": "X",
+    "from": "N",
+    "to": "N",
+    "definitions": [
+      "ten-",
+      "tenth"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "atic",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ic",
+      "-en"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ific",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "P",
+    "to_key": 2,
+    "definitions": [
+      "denotes one who makes",
+      "master of",
+      "professional in"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tic",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ic",
+      "-en"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ric",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "p",
+    "to_key": 2,
+    "definitions": [
+      "-or",
+      "-er",
+      "indicates the doer",
+      "one who preforms the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "esc",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 1,
+    "definitions": [
+      "begin to -",
+      "grow -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "esc",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 2,
+    "definitions": [
+      "begin to -",
+      "grow -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ac",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "having a tendency"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ic",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ic",
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived/coming from"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sc",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 1,
+    "definitions": [
+      "begin to -",
+      "grow -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sc",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 2,
+    "definitions": [
+      "begin to -",
+      "grow -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "c",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "connect": "i",
+    "definitions": [
+      "-ic",
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived/coming from"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "abund",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-bund",
+      "-ent",
+      "-ful",
+      "-ing",
+      "characteristic of",
+      "verbal ADJ of active force w/object"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ebund",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-bund",
+      "-ent",
+      "-ful",
+      "-ing",
+      "characteristic of",
+      "verbal ADJ of active force w/object"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ibund",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-bund",
+      "-ent",
+      "-ful",
+      "-ing",
+      "characteristic of",
+      "verbal ADJ of active force w/object"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "cund",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ent",
+      "-ful",
+      "-ing",
+      "characteristic of",
+      "capacity or inclination"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "id",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ous",
+      "tending to",
+      "in a condition of",
+      "in a state of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "issime",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "SUPER",
+    "to_key": 0,
+    "definitions": [
+      "-estily",
+      "-estly",
+      "most -ly",
+      "much -ly",
+      "very -ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ace",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "of/made of",
+      "resembling",
+      "similar to",
+      "-like"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ose",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-fully",
+      "-ily",
+      "-ly",
+      "-tiously"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "me",
+    "from": "ADJ",
+    "from_part": 4,
+    "to": "ADV",
+    "to_type": "SUPER",
+    "to_key": 0,
+    "definitions": [
+      "-estily",
+      "-estly",
+      "most -ly",
+      "much -ly",
+      "very -ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "e",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "make of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "e",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ily",
+      "-ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "antissi",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 0,
+    "definitions": [
+      "most -ing",
+      "much -ing",
+      "makes ADJ SUPER of verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "entissi",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 0,
+    "definitions": [
+      "most -ing",
+      "much -ing",
+      "makes ADJ of verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "cini",
+    "from": "N",
+    "from_part": 1,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ing",
+      "-age",
+      "forms activity/profession of person"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "issi",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 4,
+    "definitions": [
+      "-est",
+      "most ~",
+      "much ~",
+      "makes SUPER"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "issi",
+    "from": "V",
+    "from_part": 4,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 4,
+    "definitions": [
+      "makes a verb PERF PPL into an adjective SUPER"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "boni",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "of good"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "moni",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-monia",
+      "act of",
+      "means of",
+      "result of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "moni",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-monia",
+      "act of",
+      "means of",
+      "result of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "anti",
+    "from": "V",
+    "from_part": 1,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ance",
+      "state of",
+      "quality of",
+      "act of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "anti",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "COMP",
+    "to_key": 0,
+    "definitions": [
+      "more -ing",
+      "makes ADJ COMP of verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "enti",
+    "from": "V",
+    "from_part": 1,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ence",
+      "state of",
+      "quality of",
+      "act of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "enti",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "COMP",
+    "to_key": 0,
+    "definitions": [
+      "more -ing",
+      "makes ADJ COMP of verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ari",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "place where",
+      "female agent"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ari",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-arium",
+      "-ary",
+      "place where"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ari",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "-er",
+      "-ist",
+      "dealer in thing",
+      "maker/artisan"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ari",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived from",
+      "made of",
+      "-like"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ari",
+    "from": "NUM",
+    "from_part": 3,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "consisting of/containing X things",
+      "X each",
+      "of X",
+      "digits wide"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ori",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-orium",
+      "-ory",
+      "-or",
+      "place where"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ori",
+    "from": "V",
+    "from_part": 4,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-orous",
+      "-ory",
+      "having to do with",
+      "pretaining to",
+      "tending to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iti",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ity",
+      "-ship",
+      "-ance",
+      "ility",
+      "ness",
+      "makes abstract noun of the adjective"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iti",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 5,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ity",
+      "-ship",
+      "-ance",
+      "ility",
+      "ness",
+      "makes abstract noun of the adjective"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iti",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ity",
+      "-ship",
+      "-ance",
+      "ility",
+      "ness",
+      "makes abstract noun of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "li",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 4,
+    "connect": "l",
+    "definitions": [
+      "-est",
+      "most ~",
+      "much ~",
+      "makes ADJ with stem ending in 'l' SUPER"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ri",
+    "from": "ADJ",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "SUPER",
+    "to_key": 4,
+    "connect": "r",
+    "definitions": [
+      "-est",
+      "most ~",
+      "much ~",
+      "makes ADJ with stem ending in 'r' SUPER"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ti",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "V",
+    "from_part": 4,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ly",
+      "(use imagination! run -> hastily",
+      "strive -> eagerly",
+      "stand -> immediately)"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ness",
+      "-es",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "art or craft done by the person",
+      "office of",
+      "-ship"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "makes abstract noun of the verb",
+      "place/instrument/result of verb action"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "COMP",
+    "to_key": 3,
+    "definitions": [
+      "-er",
+      "makes adjective comparative"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "i",
+    "from": "V",
+    "from_part": 4,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "COMP",
+    "to_key": 3,
+    "definitions": [
+      "makes a verb PERF PPL into an adjective COMP"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "abil",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-able",
+      "-ble",
+      "having the passive quality",
+      "able to",
+      "able to be"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "atil",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-il",
+      "of a",
+      "pertaining to a",
+      "in a condition of",
+      "in a state of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ibil",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-able",
+      "-ble",
+      "having the passive quality",
+      "able to",
+      "able to be",
+      "-ful"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "icul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "icul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "icul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "bil",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-able",
+      "-ble",
+      "having the passive quality",
+      "able to",
+      "able to be",
+      "having ability"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "bul",
+    "from": "X",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "forms noun of means",
+      "instrument",
+      "place"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "bul",
+    "from": "X",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "forms noun of means",
+      "instrument",
+      "place"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "col",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "denotes one who inhabits/tills/worships"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "cul",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "denotes means or instrument or place for special purpose for action of V"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ell",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl",
+      "!!!!!!!!"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ell",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ell",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ill",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ill",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ill",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "al",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-al",
+      "of a ~",
+      "pertaining to a ~",
+      "in a condition of ~",
+      "in a state of ~"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "il",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-able",
+      "-ble",
+      "having the passive quality",
+      "able to",
+      "able to be"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "il",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-il",
+      "of a ~",
+      "pertaining to a ~",
+      "in a condition of ~",
+      "in a state of ~"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ol",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ol",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ol",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ul",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "x",
+    "to_key": 0,
+    "definitions": [
+      "little",
+      "small",
+      "-let  target is of gender of root => decl"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ul",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ulus",
+      "of a",
+      "pertaining to a",
+      "in a condition of",
+      "in a state of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itim",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-itime",
+      "-tine",
+      "-tane",
+      "of",
+      "belonging to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "atim",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "_ by _",
+      "eg. step by step",
+      "little by little"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itim",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "_ by _",
+      "eg. vir.itim => man by man"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tim",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-itime",
+      "-tine",
+      "-tane",
+      "of",
+      "belonging to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ism",
+    "from": "X",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "T",
+    "to_key": 0,
+    "definitions": [
+      "-ism",
+      "makes noun of action/ideology/association/fellowship"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "um",
+    "from": "ADJ",
+    "from_part": 1,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "udin",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "connect": "t",
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sion",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sion",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tion",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tion",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ian",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "of/belonging to  [N -> ADJ]"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "men",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "act of",
+      "means of",
+      "result of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ten",
+    "from": "NUM",
+    "from_part": 3,
+    "to": "NUM",
+    "to_type": "0",
+    "to_key": 3,
+    "definitions": [
+      "each/apiece/times/fold"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "min",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "act of",
+      "means of",
+      "result of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "don",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "act of or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "gon",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "act of or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ion",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "indicates the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ion",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "urn",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-urnal",
+      "-ily",
+      "-y",
+      "-ing",
+      "of",
+      "belonging to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "an",
+    "from": "NUM",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "soldiers of the Nth Legion"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "an",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-anus"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "an",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-an",
+      "-ain",
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived/coming from"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "en",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-en",
+      "-ene",
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived/coming from"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "in",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ine",
+      "-in",
+      "of",
+      "pertaining/belonging to",
+      "connected with",
+      "derived/coming from"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "in",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ing",
+      "art or craft"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "udo",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "connect": "t",
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sio",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "sio",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tio",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tio",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "do",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "act of or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "go",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "act of or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "io",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "io",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "-ion",
+      "-ery",
+      "indicates the action or result of the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "abiliter",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-abaly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ibiliter",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ibaly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "aliter",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ality",
+      "-ally"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "anter",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ingly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "enter",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ingly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ester",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-urnal",
+      "-ily",
+      "-y",
+      "-ing",
+      "of",
+      "belonging to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "estr",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 2,
+    "definitions": [
+      "-y",
+      "of the",
+      "of",
+      "belonging to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iter",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ily",
+      "-ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ior",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 0,
+    "to_variation": 0,
+    "to_type": "COMP",
+    "to_key": 3,
+    "definitions": [
+      "-er",
+      "more ~",
+      "makes ADJ POS into ADJ COMP"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "por",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "P",
+    "to_key": 0,
+    "definitions": [
+      "-'s boy"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ar",
+    "from": "X",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 4,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "means/instrument/place for special purpose of N/V"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ar",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 2,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ary",
+      "of a",
+      "pertaining to a"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "br",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "denotes means or instrument"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "cr",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "denotes means or instrument or place for special purpose for action of V"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "er",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "connect": "t",
+    "definitions": [
+      "-ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "or",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "-or",
+      "-er",
+      "indicates the doer",
+      "one who performs the action of the verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "or",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "the thing of the verb",
+      "result of",
+      "amor = love",
+      "timor = fear"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tr",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "means",
+      "instrument",
+      "place"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ur",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ure",
+      "pertaining to",
+      "use of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ur",
+    "from": "N",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ure",
+      "pertaining to",
+      "use of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "etas",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "connect": "i",
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itas",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ity",
+      "-ness",
+      "makes abstract noun of quality or condition"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itas",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ness",
+      "condition of being",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itus",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "of _",
+      "from the _",
+      "-ing"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tas",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ness",
+      "condition of being",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tus",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-liness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ans",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "makes ADJ of verb",
+      "equivalent to PRES ACTIVE PPL"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ens",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "makes ADJ of verb",
+      "equivalent to PRES ACTIVE PPL"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iss",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "p",
+    "to_key": 0,
+    "definitions": [
+      "female"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ius",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "COMP",
+    "to_key": 0,
+    "definitions": [
+      "more -ly",
+      "-ier"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tus",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "of _",
+      "from the _"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "es",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "result of",
+      "place of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "is",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "result of",
+      "place of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "os",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ous",
+      "-ose",
+      "-some",
+      "full of",
+      "prone to",
+      "rich in",
+      "abounding in"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "us",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "ADV",
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ly"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "us",
+    "from": "ADJ",
+    "from_part": 3,
+    "to": "ADV",
+    "to_type": "COMP",
+    "to_key": 0,
+    "definitions": [
+      "more -ly",
+      "-lier"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "olent",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-olent",
+      "full of",
+      "prone to",
+      "rich in",
+      "abounding in"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ulent",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ulent",
+      "full of",
+      "prone to",
+      "rich in",
+      "abounding in"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ament",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ment",
+      "-ion",
+      "act of",
+      "instrument/equipment/means for ~ing",
+      "result of ~ing"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ment",
+    "from": "V",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 2,
+    "to_variation": 2,
+    "to_gender": "N",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ment",
+      "-ion",
+      "act of",
+      "instrument/equipment/means for ~ing",
+      "result of ~ing"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "etat",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "connect": "i",
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itat",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ity",
+      "-ness",
+      "makes abstract noun of quality or condition"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "itat",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ness",
+      "condition of being",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tat",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 1,
+    "definitions": [
+      "-ness",
+      "condition of being",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tat",
+    "from": "ADJ",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-ness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tat",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 4,
+    "definitions": [
+      "try to do -",
+      "keep doing -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tut",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "t",
+    "to_key": 2,
+    "definitions": [
+      "-liness",
+      "makes abstract noun"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ant",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "makes ADJ of verb",
+      "equivalent to PRES ACTIVE PPL"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ent",
+    "from": "V",
+    "from_part": 1,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 2,
+    "definitions": [
+      "-ing",
+      "makes ADJ of verb",
+      "equivalent to PRES ACTIVE PPL"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "at",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 4,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "t",
+    "to_key": 0,
+    "definitions": [
+      "-ate",
+      "-ship",
+      "the office of",
+      "official body"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "at",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ed",
+      "having",
+      "having a",
+      "provided with",
+      "-able"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "it",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ed",
+      "having",
+      "having a",
+      "provided with",
+      "-able"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ut",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ed",
+      "having",
+      "having a",
+      "provided with",
+      "-able"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "it",
+    "from": "V",
+    "from_part": 4,
+    "to": "V",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 1,
+    "definitions": [
+      "try to do -",
+      "keep doing -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "it",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 1,
+    "definitions": [
+      "try to do -",
+      "keep doing -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "t",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 1,
+    "definitions": [
+      "try to do -",
+      "keep doing -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "t",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ed",
+      "having",
+      "having a",
+      "provided with",
+      "-able"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ativ",
+    "from": "N",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ative",
+      "capable/worthy of"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "tav",
+    "from": "V",
+    "from_part": 2,
+    "to": "V",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "X",
+    "to_key": 3,
+    "definitions": [
+      "try to do -",
+      "keep doing -"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iv",
+    "from": "V",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ive",
+      "-ed",
+      "tending to",
+      "pretaining to"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "iv",
+    "from": "V",
+    "from_part": 4,
+    "to": "ADJ",
+    "to_which": 1,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 0,
+    "definitions": [
+      "-ive",
+      "-ed",
+      "having the passive tendency",
+      "having been ...-ed"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ifex",
+    "from": "N",
+    "from_part": 2,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "M",
+    "to_type": "P",
+    "to_key": 1,
+    "definitions": [
+      "denotes one who makes",
+      "master of",
+      "professional in"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "rix",
+    "from": "V",
+    "from_part": 4,
+    "to": "N",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_gender": "F",
+    "to_type": "p",
+    "to_key": 1,
+    "definitions": [
+      "-ess",
+      "-or",
+      "-er",
+      "indicates the doer",
+      "one who performs action of verb"
+    ]
+  },
+  {
+    "type": "SUFFIX",
+    "word": "ax",
+    "from": "X",
+    "from_part": 2,
+    "to": "ADJ",
+    "to_which": 3,
+    "to_variation": 1,
+    "to_type": "POS",
+    "to_key": 1,
+    "definitions": [
+      "-ing",
+      "having a tendency/ability"
+    ]
+  },
+  {
+    "type": "TACKON",
+    "word": "que",
+    "with": "X",
+    "definitions": [
+      "= and",
+      "completes plerus/uter"
+    ],
+    "tackon_type": "-que"
+  },
+  {
+    "type": "TACKON",
+    "word": "ne",
+    "with": "X",
+    "definitions": [
+      "= is it not that",
+      "or ..."
+    ],
+    "tackon_type": "-ne"
+  },
+  {
+    "type": "TACKON",
+    "word": "ve",
+    "with": "X",
+    "definitions": [
+      "= or if you will",
+      "or as you please",
+      "or",
+      "rare"
+    ],
+    "tackon_type": "-ve"
+  },
+  {
+    "type": "TACKON",
+    "word": "est",
+    "with": "PRON",
+    "with_which": 4,
+    "with_variation": 1,
+    "with_type": "X",
+    "definitions": [
+      "= is",
+      "in a contraction",
+      "rare"
+    ],
+    "tackon_type": "-est"
+  },
+  {
+    "type": "TACKON",
+    "word": "cumque",
+    "with": "ADJ",
+    "with_which": 0,
+    "with_variation": 0,
+    "with_type": "POS",
+    "definitions": [
+      ""
+    ],
+    "tackon_type": "-ever/-soever"
+  },
+  {
+    "type": "TACKON",
+    "word": "cunque",
+    "with": "ADJ",
+    "with_which": 0,
+    "with_variation": 0,
+    "with_type": "POS",
+    "definitions": [
+      ""
+    ],
+    "tackon_type": "-ever/-soever"
+  },
+  {
+    "type": "TACKON",
+    "word": "cine",
+    "with": "PRON",
+    "with_which": 3,
+    "with_variation": 1,
+    "with_type": "ADJECT",
+    "definitions": [
+      "w/hic this?"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "pte",
+    "with": "ADJ",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "POS",
+    "definitions": [
+      "!"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "pte",
+    "with": "PRON",
+    "with_which": 4,
+    "with_variation": 0,
+    "with_type": "PERS",
+    "definitions": [
+      "!"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "pte",
+    "with": "PRON",
+    "with_which": 5,
+    "with_variation": 0,
+    "with_type": "PERS",
+    "definitions": [
+      "!"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "ce",
+    "with": "PRON",
+    "with_which": 3,
+    "with_variation": 1,
+    "with_type": "ADJECT",
+    "definitions": [
+      "w/hic this"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "modi",
+    "with": "PRON",
+    "with_which": 3,
+    "with_variation": 1,
+    "with_type": "ADJECT",
+    "definitions": [
+      "w/GEN of ~ kind",
+      "sort",
+      "nature",
+      "[huiusmodi => of this sort]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "modi",
+    "with": "PRON",
+    "with_which": 4,
+    "with_variation": 1,
+    "with_type": "PERS",
+    "definitions": [
+      "w/GEN of ~ kind/sort/nature",
+      "w/his/our/your [eiusmodi => of his sort]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "dem",
+    "with": "PRON",
+    "with_which": 4,
+    "with_variation": 2,
+    "with_type": "DEMONS",
+    "definitions": [
+      "w/i-ea-id   idem => same"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "cum",
+    "with": "PRON",
+    "with_which": 5,
+    "with_variation": 0,
+    "with_type": "PERS",
+    "definitions": [
+      "with",
+      "[w/ABL  mecum => at my house/with me]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "vis",
+    "with": "ADJ",
+    "with_which": 1,
+    "with_variation": 1,
+    "with_type": "POS",
+    "definitions": [
+      " [quantusvis => of whatever size you like]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "met",
+    "with": "PRON",
+    "with_which": 5,
+    "with_variation": 0,
+    "with_type": "PERS",
+    "definitions": [
+      "w/personal self",
+      "own",
+      "on subst PERS [meamet/egomet => my own/myself]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "familias",
+    "with": "N",
+    "with_which": 3,
+    "with_variation": 0,
+    "with_gender": "C",
+    "with_type": "P",
+    "definitions": [
+      "of the family/household",
+      "[pater~ => head of household]"
+    ],
+    "tackon_type": "TACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "cumque",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "REL",
+    "definitions": [
+      "w/qui => whoever",
+      "whatever",
+      "everyone who",
+      "all that",
+      "anything that"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "cunque",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "REL",
+    "definitions": [
+      "w/qui => whoever",
+      "whatever",
+      "everyone who",
+      "all that",
+      "anything that"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "que",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui => whoever it be",
+      "whatever",
+      "each",
+      "each one",
+      "everyone",
+      "everything"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "piam",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui =>  any/somebody",
+      "any",
+      "some",
+      "any/something"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "quam",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/quis =>  any",
+      "any man/person",
+      "anybody/anyone",
+      "any whatever",
+      "anything"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "dam",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui => certain",
+      "a certain",
+      "a certain thing"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "nam",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INTERR",
+    "definitions": [
+      "w/qui => who then/in the world",
+      "which",
+      "I insist/meant",
+      "why/what pray"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "cum",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INTERR",
+    "definitions": [
+      "w/qui pron with ABL => with what",
+      "with whom"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "vis",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui whoever it be",
+      "whomever you please",
+      "any/anything whatever"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "libet",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui-anyone",
+      "-whatever",
+      "what you will",
+      "no matter which"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "lubet",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "INDEF",
+    "definitions": [
+      "w/qui -anyone",
+      "-whatever",
+      "what you will",
+      "no matter which"
+    ],
+    "tackon_type": "PACKON"
+  }
+]
