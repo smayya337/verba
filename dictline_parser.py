@@ -1,19 +1,17 @@
+# type: ignore
+
 import json
 import re
 
 
 def noun_handler(parts, data, tags, definitions):
     return {
-        "first principal part": "" if parts[0] == "zzz" else parts[0],
-        "second principal part": ""
-        if len(parts) <= 1 or parts[1] == "zzz"
-        else parts[1],
-        "third principal part": ""
-        if len(parts) <= 2 or parts[2] == "zzz"
-        else parts[2],
-        "fourth principal part": ""
-        if len(parts) <= 3 or parts[3] == "zzz"
-        else parts[3],
+        "principal parts": [
+            "" if parts[0] == "zzz" else parts[0],
+            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
+            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
+            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+        ],
         "part of speech": data[0],
         "which": data[1],
         "variation": data[2],
@@ -30,16 +28,12 @@ def noun_handler(parts, data, tags, definitions):
 
 def verb_handler(parts, data, tags, definitions):
     return {
-        "first principal part": "" if parts[0] == "zzz" else parts[0],
-        "second principal part": ""
-        if len(parts) <= 1 or parts[1] == "zzz"
-        else parts[1],
-        "third principal part": ""
-        if len(parts) <= 2 or parts[2] == "zzz"
-        else parts[2],
-        "fourth principal part": ""
-        if len(parts) <= 3 or parts[3] == "zzz"
-        else parts[3],
+        "principal parts": [
+            "" if parts[0] == "zzz" else parts[0],
+            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
+            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
+            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+        ],
         "part of speech": data[0],
         "which": data[1],
         "variation": data[2],
@@ -56,16 +50,12 @@ def verb_handler(parts, data, tags, definitions):
 # and pron
 def adj_handler(parts, data, tags, definitions):
     return {
-        "first principal part": "" if parts[0] == "zzz" else parts[0],
-        "second principal part": ""
-        if len(parts) <= 1 or parts[1] == "zzz"
-        else parts[1],
-        "third principal part": ""
-        if len(parts) <= 2 or parts[2] == "zzz"
-        else parts[2],
-        "fourth principal part": ""
-        if len(parts) <= 3 or parts[3] == "zzz"
-        else parts[3],
+        "principal parts": [
+            "" if parts[0] == "zzz" else parts[0],
+            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
+            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
+            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+        ],
         "part of speech": data[0],
         "which": data[1],
         "variation": data[2],
@@ -82,16 +72,12 @@ def adj_handler(parts, data, tags, definitions):
 # and prep
 def adv_handler(parts, data, tags, definitions):
     return {
-        "first principal part": "" if parts[0] == "zzz" else parts[0],
-        "second principal part": ""
-        if len(parts) <= 1 or parts[1] == "zzz"
-        else parts[1],
-        "third principal part": ""
-        if len(parts) <= 2 or parts[2] == "zzz"
-        else parts[2],
-        "fourth principal part": ""
-        if len(parts) <= 3 or parts[3] == "zzz"
-        else parts[3],
+        "principal parts": [
+            "" if parts[0] == "zzz" else parts[0],
+            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
+            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
+            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+        ],
         "part of speech": data[0],
         "type": data[1],
         "age": tags[0],
@@ -106,16 +92,12 @@ def adv_handler(parts, data, tags, definitions):
 # and conj
 def interj_handler(parts, data, tags, definitions):
     return {
-        "first principal part": "" if parts[0] == "zzz" else parts[0],
-        "second principal part": ""
-        if len(parts) <= 1 or parts[1] == "zzz"
-        else parts[1],
-        "third principal part": ""
-        if len(parts) <= 2 or parts[2] == "zzz"
-        else parts[2],
-        "fourth principal part": ""
-        if len(parts) <= 3 or parts[3] == "zzz"
-        else parts[3],
+        "principal parts": [
+            "" if parts[0] == "zzz" else parts[0],
+            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
+            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
+            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+        ],
         "part of speech": data[0],
         "age": tags[0],
         "area": tags[1],
@@ -128,10 +110,12 @@ def interj_handler(parts, data, tags, definitions):
 
 def num_handler(parts, data, tags, definitions):
     return {
-        "first principal part": parts[0],
-        "second principal part": parts[1] if len(parts) > 1 else "",
-        "third principal part": parts[2] if len(parts) > 2 else "",
-        "fourth principal part": parts[3] if len(parts) > 3 else "",
+        "principal parts": [
+            parts[0],
+            parts[1] if len(parts) > 1 else "",
+            parts[2] if len(parts) > 2 else "",
+            parts[3] if len(parts) > 3 else "",
+        ],
         "part of speech": data[0],
         "which": data[1],
         "variation": data[2],
