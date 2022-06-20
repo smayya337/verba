@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "170f8b1411f6ab0a82fb0fa681962bd8e45a3144f550b2d4a6ea68dfb74f713d"
+            "sha256": "61f46ebd16af8d3687cdf1736d0ce82856810d74a2943b2a46a714dff52227ad"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -15,7 +15,23 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "python-levenshtein": {
+            "hashes": [
+                "sha256:dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6"
+            ],
+            "index": "pypi",
+            "version": "==0.12.2"
+        },
+        "thefuzz": {
+            "hashes": [
+                "sha256:4fcdde8e40f5ca5e8106bc7665181f9598a9c8b18b0a4d38c41a095ba6788972",
+                "sha256:6f7126db2f2c8a54212b05e3a740e45f4291c497d75d20751728f635bb74aa3d"
+            ],
+            "index": "pypi",
+            "version": "==0.19.0"
+        }
+    },
     "develop": {
         "black": {
             "hashes": [
