@@ -30,11 +30,11 @@ class Word:
 
     def create_word(self):
         self.word = self.stem["principal parts"][self.ending["key"] - 1]
-        self.word += self.ending["ending"]
         if self.prefix:
             self.word = self.prefix["word"] + self.prefix.get("connect", "") + self.word
         if self.suffix:
             self.word = self.word + self.suffix.get("connect", "") + self.suffix["word"]
+        self.word += self.ending["ending"]
         if self.tackon:
             self.word += self.tackon["word"]
         assert (
