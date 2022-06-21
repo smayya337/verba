@@ -1,10 +1,8 @@
 # type: ignore
 
 from verba.words import *
-from thefuzz import fuzz, process
 import json
 import os
-import time
 
 
 class Solver:
@@ -69,18 +67,12 @@ class Solver:
                 self.uniques[unique].append(u)
 
     def find_words(self, full_target, target_word, tackon, prefix, ending, suffix):
-        # all_words = set()
         all_words = []
         # this is the tough part
         # first, uniques
         if target_word in self.uniques:
             for u in self.uniques[target_word]:
                 try:
-                    # all_words.add(
-                    #     self.parts_of_speech_to_classes[
-                    #         self._part_of_speech(u, ending, prefix, suffix, tackon)
-                    #     ](full_target, u, ending, prefix, suffix, tackon)
-                    # )
                     all_words.append(
                         self.parts_of_speech_to_classes[
                             Word.part_of_speech(u, ending, prefix, suffix, tackon)
@@ -92,11 +84,6 @@ class Solver:
         if target_word in self.dictline:
             for d in self.dictline[target_word]:
                 try:
-                    # all_words.add(
-                    #     self.parts_of_speech_to_classes[
-                    #         self._part_of_speech(d, ending, prefix, suffix, tackon)
-                    #     ](full_target, d, ending, prefix, suffix, tackon)
-                    # )
                     all_words.append(
                         self.parts_of_speech_to_classes[
                             Word.part_of_speech(d, ending, prefix, suffix, tackon)
@@ -107,23 +94,14 @@ class Solver:
         return all_words
 
     def remove_suffixes(self, full_target, target_word, tackon, prefix, ending):
-        # all_words = set()
         all_words = []
         for suffix_key, suffix_values in self.suffixes.items():
             if target_word.endswith(suffix_key):
                 for suffix_data in suffix_values:
                     suffix = suffix_data.get("connect", "") + suffix_key
-                    if target_word.endswith(suffix):
-                        # all_words.update(
-                        #     self.find_words(
-                        #         full_target,
-                        #         target_word[: -len(suffix)],
-                        #         tackon,
-                        #         prefix,
-                        #         ending,
-                        #         suffix_data,
-                        #     )
-                        # )
+                    if target_word.endswith(suffix) and Word.valid(
+                        None, ending, prefix, suffix_data, tackon
+                    ):
                         all_words.extend(
                             self.find_words(
                                 full_target,
@@ -134,62 +112,40 @@ class Solver:
                                 suffix_data,
                             )
                         )
-        # all_words.update(
-        #     self.find_words(full_target, target_word, tackon, prefix, ending, None)
-        # )
         all_words.extend(
             self.find_words(full_target, target_word, tackon, prefix, ending, None)
         )
         return all_words
 
     def remove_endings(self, full_target, target_word, tackon, prefix):
-        # all_words = set()
         all_words = []
         for ending_key, ending_values in self.inflections.items():
             if target_word.endswith(ending_key):
                 for ending_data in ending_values:
-                    # all_words.update(
-                    #     self.remove_suffixes(
-                    #         full_target,
-                    #         target_word[: -len(ending_key)],
-                    #         tackon,
-                    #         prefix,
-                    #         ending_data,
-                    #     )
-                    # )
-                    all_words.extend(
-                        self.remove_suffixes(
-                            full_target,
-                            target_word[: -len(ending_key)],
-                            tackon,
-                            prefix,
-                            ending_data,
+                    if Word.valid(None, ending_data, prefix, None, tackon):
+                        all_words.extend(
+                            self.remove_suffixes(
+                                full_target,
+                                target_word[: -len(ending_key)],
+                                tackon,
+                                prefix,
+                                ending_data,
+                            )
                         )
-                    )
-        # all_words.update(
-        #     self.remove_suffixes(full_target, target_word, tackon, prefix, None)
-        # )
         all_words.extend(
             self.remove_suffixes(full_target, target_word, tackon, prefix, None)
         )
         return all_words
 
     def remove_prefixes(self, full_target, target_word, tackon):
-        # all_words = set()
         all_words = []
         for prefix_key, prefix_values in self.prefixes.items():
             if target_word.startswith(prefix_key):
                 for prefix_data in prefix_values:
                     prefix = prefix_key + prefix_data.get("connect", "")
-                    if target_word.startswith(prefix):
-                        # all_words.update(
-                        #     self.remove_endings(
-                        #         full_target,
-                        #         target_word[len(prefix) :],
-                        #         tackon,
-                        #         prefix_data,
-                        #     )
-                        # )
+                    if target_word.startswith(prefix) and Word.valid(
+                        None, None, prefix_data, None, tackon
+                    ):
                         all_words.extend(
                             self.remove_endings(
                                 full_target,
@@ -198,27 +154,22 @@ class Solver:
                                 prefix_data,
                             )
                         )
-        # all_words.update(self.remove_endings(full_target, target_word, tackon, None))
         all_words.extend(self.remove_endings(full_target, target_word, tackon, None))
         return all_words
 
     def remove_tackons(self, target_word):
-        # all_words = set()
         all_words = []
         for tackon_key, tackon_values in self.tackons.items():
             if target_word.endswith(tackon_key):
                 for tackon_data in tackon_values:
-                    # all_words.update(
-                    #     self.remove_prefixes(
-                    #         target_word, target_word[: -len(tackon_key)], tackon_data
-                    #     )
-                    # )
-                    all_words.extend(
-                        self.remove_prefixes(
-                            target_word, target_word[: -len(tackon_key)], tackon_data
+                    if Word.valid(None, None, None, None, tackon_data):
+                        all_words.extend(
+                            self.remove_prefixes(
+                                target_word,
+                                target_word[: -len(tackon_key)],
+                                tackon_data,
+                            )
                         )
-                    )
-        # all_words.update(self.remove_prefixes(target_word, target_word, None))
         all_words.extend(self.remove_prefixes(target_word, target_word, None))
         return all_words
 

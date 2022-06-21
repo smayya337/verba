@@ -1,6 +1,5 @@
 # type: ignore
 
-
 class Word:
     """A Latin word."""
 
@@ -81,7 +80,7 @@ class Word:
         if ending:
             assert (
                 Word.part_of_speech_matches(
-                    stem["part of speech"], ending["part of speech"]
+                    self.stem["part of speech"], self.ending["part of speech"]
                 )
                 or (
                     self.stem["part of speech"] == "V"
@@ -93,32 +92,43 @@ class Word:
                 )
                 or (
                     self.stem["part of speech"] == "V"
-                    and self.ending
                     and self.ending["part of speech"] == "VPAR"
                 )
             ), "The stem and ending of this word are incompatible!"
         if prefix:
             assert Word.part_of_speech_matches(
-                stem["part of speech"], prefix["from"]
+                self.stem["part of speech"], self.prefix["from"]
             ), "The stem and prefix of this word are incompatible!"
         if suffix:
             assert Word.part_of_speech_matches(
-                stem["part of speech"], suffix["from"]
+                self.stem["part of speech"], self.suffix["from"]
             ), "The stem and suffix of this word are incompatible!"
         if tackon:
             assert Word.part_of_speech_matches(
-                stem["part of speech"], tackon["with"]
+                self.stem["part of speech"], self.tackon["with"]
             ), "The stem and tackon of this word are incompatible!"
+            if "with_type" in self.tackon:
+                assert (
+                    self.stem["type"] == self.tackon["with_type"]
+                ), "The stem and tackon of this word are incompatible!"
+        self.which, self.variation = Word.which_and_variation(
+            self.stem, self.ending, self.prefix, self.suffix, self.tackon
+        )
+        self.gender = Word.gender(
+            self.stem, self.ending, self.prefix, self.suffix, self.tackon
+        )
         self.create_word()
 
     def create_word(self):
-        if self.ending:
-            if "principal parts" in self.stem:
+        if "principal parts" in self.stem:
+            if self.suffix and "from_part" in self.suffix:
+                self.word = self.stem["principal parts"][self.suffix["from_part"] - 1]
+            elif self.ending:
                 self.word = self.stem["principal parts"][self.ending.get("key", 1) - 1]
             else:
-                self.word = self.stem["word"]
+                self.word = self.stem["principal parts"][0]
         else:
-            self.word = self.stem["principal parts"][0]
+            self.word = self.stem["word"]
         if self.prefix:
             self.word = self.prefix["word"] + self.prefix.get("connect", "") + self.word
         if self.suffix:
@@ -167,10 +177,15 @@ class Word:
         return False not in booleans
 
     @staticmethod
-    def part_of_speech(stem, ending=None, prefix=None, suffix=None, tackon=None):
-        part_of_speech = stem["part of speech"]
+    def part_of_speech(stem=None, ending=None, prefix=None, suffix=None, tackon=None):
+        if stem:
+            part_of_speech = stem["part of speech"]
+        else:
+            part_of_speech = "X"
         if ending and ending["part of speech"] != "X":
-            if ending["part of speech"] == "SUPINE":
+            if part_of_speech == "X":
+                part_of_speech = ending["part of speech"]
+            elif ending["part of speech"] == "SUPINE":
                 part_of_speech = "SUPINE"
             elif ending["part of speech"] == "VPAR":
                 part_of_speech = "VPAR"
@@ -178,19 +193,129 @@ class Word:
                 part_of_speech, ending["part of speech"]
             ) or (part_of_speech == "PACK" and ending["part of speech"] == "PRON")
         if prefix:
-            assert Word.part_of_speech_matches(part_of_speech, prefix["from"])
+            assert (
+                Word.part_of_speech_matches(part_of_speech, prefix["from"])
+                or part_of_speech == "X"
+            )
             if prefix["to"] != "X":
                 part_of_speech = prefix["to"]
         if suffix:
-            assert Word.part_of_speech_matches(part_of_speech, suffix["from"])
+            assert (
+                Word.part_of_speech_matches(part_of_speech, suffix["from"])
+                or part_of_speech == "X"
+            )
             if suffix["to"] != "X":
                 part_of_speech = suffix["to"]
         if tackon:
             assert (
                 Word.part_of_speech_matches(part_of_speech, tackon["with"])
+                or part_of_speech == "X"
                 or tackon["with"] == "X"
             )
         return part_of_speech
+
+    @staticmethod
+    def which_and_variation(
+        stem=None, ending=None, prefix=None, suffix=None, tackon=None
+    ):
+        which = 0
+        variation = 0
+        if stem and "which" in stem and "variation" in stem:
+            which = stem["which"]
+            variation = stem["variation"]
+        if ending and "which" in ending and "variation" in ending:
+            assert Word.category_matches(
+                (which, variation),
+                (
+                    ending["which"],
+                    ending["variation"],
+                ),
+            ), "The parts of this word cannot be reconciled!"
+        if (
+            suffix
+            and "from_which" in suffix
+            and "from_variation" in suffix
+            and "to_which" in suffix
+            and "to_variation" in suffix
+        ):
+            assert Word.category_matches(
+                (which, variation),
+                (
+                    suffix["from_which"],
+                    suffix["from_variation"],
+                ),
+            ), "The parts of this word cannot be reconciled!"
+            which = suffix["to_which"]
+            variation = suffix["to_variation"]
+        if (
+            prefix
+            and "from_which" in prefix
+            and "from_variation" in prefix
+            and "to_which" in prefix
+            and "to_variation" in prefix
+        ):
+            assert Word.category_matches(
+                (which, variation),
+                (
+                    prefix["from_which"],
+                    prefix["from_variation"],
+                ),
+            ), "The parts of this word cannot be reconciled!"
+            which = prefix["to_which"]
+            variation = prefix["to_variation"]
+        if tackon and "with_which" in tackon and "with_variation" in tackon:
+            assert Word.category_matches(
+                (which, variation),
+                (
+                    tackon["with_which"],
+                    tackon["with_variation"],
+                ),
+            ), "The parts of this word cannot be reconciled!"
+        return which, variation
+
+    @staticmethod
+    def gender(stem=None, ending=None, prefix=None, suffix=None, tackon=None):
+        gender = "X"
+        if stem and "gender" in stem:
+            gender = stem["gender"]
+        else:
+            return "X"
+        if ending and "gender" in ending:
+            assert Word.gender_matches(
+                gender, ending["gender"]
+            ), "The parts of this word cannot be reconciled!"
+        if suffix:
+            if "from_gender" in suffix:
+                assert Word.gender_matches(
+                    gender, suffix["from_gender"]
+                ), "The parts of this word cannot be reconciled!"
+            if "to_gender" in suffix:
+                gender = suffix["to_gender"]
+        if prefix:
+            if "from_gender" in prefix:
+                assert Word.gender_matches(
+                    gender, prefix["from_gender"]
+                ), "The parts of this word cannot be reconciled!"
+            if "to_gender" in prefix:
+                gender = prefix["to_gender"]
+        if tackon:
+            if "from_gender" in tackon:
+                assert Word.gender_matches(
+                    gender, tackon["from_gender"]
+                ), "The parts of this word cannot be reconciled!"
+            if "to_gender" in tackon:
+                gender = tackon["to_gender"]
+        return gender
+
+    @staticmethod
+    def valid(stem=None, ending=None, prefix=None, suffix=None, tackon=None):
+        try:
+            Word.part_of_speech(stem, ending, prefix, suffix, tackon)
+            Word.which_and_variation(stem, ending, prefix, suffix, tackon)
+            Word.gender(stem, ending, prefix, suffix, tackon)
+        except AssertionError:
+            return False
+        return True
 
     @staticmethod
     def convert_to_classical_latin(word):
@@ -203,17 +328,6 @@ class Word:
             and self.prefix == other.prefix
             and self.suffix == other.suffix
             and self.tackon == other.tackon
-        )
-
-    def __hash__(self):
-        return hash(
-            (
-                self.stem.values() if self.stem else 0,
-                self.ending.values() if self.ending else 0,
-                self.prefix.values() if self.prefix else 0,
-                self.suffix.values() if self.suffix else 0,
-                self.tackon.values() if self.tackon else 0,
-            )
         )
 
     def __repr__(self):
@@ -343,65 +457,17 @@ class Number(Word):
                 ), "The stem and ending of this word are incompatible!"
 
 
-# TODO: supines are weird - they're only in the inflections, not the dictionary - check the last three assertions
 class Supine(Word):
     def __init__(
         self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
     ):
-        # self.prefix = prefix
-        # self.stem = stem
-        # self.ending = ending
-        # self.suffix = suffix
-        # self.tackon = tackon
-        # self.target = target
-        # if ending:
-        #     assert (
-        #         self.stem["part of speech"] == "V"
-        #         and self.ending["part of speech"] == "SUPINE"
-        #     ), "The stem and ending of this word are incompatible!"
-        # if prefix:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], prefix["from"]
-        #     ), "The stem and prefix of this word are incompatible!"
-        # if suffix:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], suffix["from"]
-        #     ), "The stem and suffix of this word are incompatible!"
-        # if tackon:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], tackon["with"]
-        #     ), "The stem and tackon of this word are incompatible!"
         super().__init__(target, stem, ending, prefix, suffix, tackon)
 
 
-# TODO: packs are weird - they're only in the dictionary, not the inflections - check the last three assertions
 class Pack(Word):
     def __init__(
         self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
     ):
-        # self.prefix = prefix
-        # self.stem = stem
-        # self.ending = ending
-        # self.suffix = suffix
-        # self.tackon = tackon
-        # self.target = target
-        # if ending:
-        #     assert (
-        #         self.stem["part of speech"] == "PACK"
-        #         and self.ending["part of speech"] == "PRON"
-        #     ), "The stem and ending of this word are incompatible!"
-        # if prefix:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], prefix["from"]
-        #     ), "The stem and prefix of this word are incompatible!"
-        # if suffix:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], suffix["from"]
-        #     ), "The stem and suffix of this word are incompatible!"
-        # if tackon:
-        #     assert Word.part_of_speech_matches(
-        #         stem["part of speech"], tackon["with"]
-        #     ), "The stem and tackon of this word are incompatible!"
         super().__init__(target, stem, ending, prefix, suffix, tackon)
 
 

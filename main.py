@@ -22,3 +22,4 @@ for target_word in target_words:
     # for match in matches:
     #     print(match, match.stem, match.ending)
     #     print()
+print(f"Operation complete in {time.perf_counter() - solver_start} seconds.")
