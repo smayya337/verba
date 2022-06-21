@@ -1,4 +1,5 @@
 # type: ignore
+# TODO: too many made-up words are abusing the ability to not have anything in most of the fields - need to design a better way to handle this while allowing valid cases (e.g. abesse)
 
 class Word:
     """A Latin word."""
@@ -146,21 +147,17 @@ class Word:
     def gender_matches(gender_1: str, gender_2: str) -> bool:
         if gender_1 == gender_2:
             return True
-        gender_list = {gender_1, gender_2}
-        if "X" in gender_list:
+        if gender_1 == "X" or gender_2 == "X":
             return True
-        if "C" in gender_list and "N" not in gender_list:
+        if gender_1 == "C" and gender_2 != "N":
+            return True
+        if gender_2 == "C" and gender_1 != "N":
             return True
         return False
 
     @staticmethod
     def part_of_speech_matches(part_of_speech_1: str, part_of_speech_2: str) -> bool:
-        if part_of_speech_1 == part_of_speech_2:
-            return True
-        part_of_speech_set = {part_of_speech_1, part_of_speech_2}
-        if "X" in part_of_speech_set:
-            return True
-        return False
+        return part_of_speech_1 == part_of_speech_2 or part_of_speech_1 == "X" or part_of_speech_2 == "X"
 
     @staticmethod
     def category_matches(cat_1: tuple, cat_2: tuple) -> bool:
@@ -182,35 +179,27 @@ class Word:
             part_of_speech = stem["part of speech"]
         else:
             part_of_speech = "X"
-        if ending and ending["part of speech"] != "X":
-            if part_of_speech == "X":
-                part_of_speech = ending["part of speech"]
-            elif ending["part of speech"] == "SUPINE":
-                part_of_speech = "SUPINE"
-            elif ending["part of speech"] == "VPAR":
-                part_of_speech = "VPAR"
-            assert Word.part_of_speech_matches(
-                part_of_speech, ending["part of speech"]
-            ) or (part_of_speech == "PACK" and ending["part of speech"] == "PRON")
         if prefix:
             assert (
                 Word.part_of_speech_matches(part_of_speech, prefix["from"])
-                or part_of_speech == "X"
             )
             if prefix["to"] != "X":
                 part_of_speech = prefix["to"]
         if suffix:
             assert (
                 Word.part_of_speech_matches(part_of_speech, suffix["from"])
-                or part_of_speech == "X"
             )
             if suffix["to"] != "X":
                 part_of_speech = suffix["to"]
+        if ending and ending["part of speech"] != "X":
+            if part_of_speech == "X" or ending["part of speech"] == "SUPINE" or ending["part of speech"] == "VPAR":
+                part_of_speech = ending["part of speech"]
+            assert Word.part_of_speech_matches(
+                part_of_speech, ending["part of speech"]
+            ) or (part_of_speech == "PACK" and ending["part of speech"] == "PRON")
         if tackon:
             assert (
                 Word.part_of_speech_matches(part_of_speech, tackon["with"])
-                or part_of_speech == "X"
-                or tackon["with"] == "X"
             )
         return part_of_speech
 
@@ -279,11 +268,7 @@ class Word:
         if stem and "gender" in stem:
             gender = stem["gender"]
         else:
-            return "X"
-        if ending and "gender" in ending:
-            assert Word.gender_matches(
-                gender, ending["gender"]
-            ), "The parts of this word cannot be reconciled!"
+            return gender
         if suffix:
             if "from_gender" in suffix:
                 assert Word.gender_matches(
@@ -298,6 +283,10 @@ class Word:
                 ), "The parts of this word cannot be reconciled!"
             if "to_gender" in prefix:
                 gender = prefix["to_gender"]
+        if ending and "gender" in ending:
+            assert Word.gender_matches(
+                gender, ending["gender"]
+            ), "The parts of this word cannot be reconciled!"
         if tackon:
             if "from_gender" in tackon:
                 assert Word.gender_matches(

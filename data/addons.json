@@ -2198,7 +2198,7 @@
       "-orous",
       "-ory",
       "having to do with",
-      "pretaining to",
+      "pertaining to",
       "tending to"
     ]
   },
@@ -4483,7 +4483,7 @@
     "word": "que",
     "with": "X",
     "definitions": [
-      "= and",
+      "and",
       "completes plerus/uter"
     ],
     "tackon_type": "-que"
@@ -4644,7 +4644,7 @@
     "with_variation": 2,
     "with_type": "DEMONS",
     "definitions": [
-      "w/i-ea-id   idem => same"
+      "same"
     ],
     "tackon_type": "TACKON"
   },
@@ -4656,8 +4656,7 @@
     "with_variation": 0,
     "with_type": "PERS",
     "definitions": [
-      "with",
-      "[w/ABL  mecum => at my house/with me]"
+      "with"
     ],
     "tackon_type": "TACKON"
   },

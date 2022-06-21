@@ -20,6 +20,7 @@ class Solver:
         "SUPINE": Supine,
         "VPAR": VerbParticiple,
     }
+    matches = {}
 
     def __init__(self):
         data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
@@ -45,9 +46,13 @@ class Solver:
             dictline = json.load(f)
             self.dictline = {}
             for d in dictline:
-                for p in d["principal parts"]:
+                for i, p in enumerate(d["principal parts"]):
                     if p:
-                        part = Word.convert_to_classical_latin(p.lower())
+                        d["principal parts"][i] = p.replace("zzz", "")
+                        if d["principal parts"][i]:
+                            part = Word.convert_to_classical_latin(d["principal parts"][i].lower())
+                        else:
+                            part = ""
                         if part not in self.dictline:
                             self.dictline[part] = []
                         self.dictline[part].append(d)
@@ -79,7 +84,7 @@ class Solver:
                         ](full_target, u, ending, prefix, suffix, tackon)
                     )
                 except AssertionError:
-                    pass
+                    continue
         # then, dictline
         if target_word in self.dictline:
             for d in self.dictline[target_word]:
@@ -90,7 +95,7 @@ class Solver:
                         ](full_target, d, ending, prefix, suffix, tackon)
                     )
                 except AssertionError:
-                    pass
+                    continue
         return all_words
 
     def remove_suffixes(self, full_target, target_word, tackon, prefix, ending):
@@ -203,33 +208,12 @@ class Solver:
             * ending: part of speech
             * tackon: with
         """
-        # # step 1
-        # if target_word in self.uniques:
-        #     for u in self.uniques[target_word]:
-        #         output_words.append(
-        #             self.parts_of_speech_to_classes[u["part of speech"]](u)
-        #         )
-        # # step 2a
-        # for tackon_key, tackon_values in self.tackons.items():
-        #     target_word = original
-        #     if target_word.endswith(tackon_key):
-        #         target_word_no_tackon = target_word[:-len(tackon_key)]
-        #         # step 2b
-        #         for prefix_key, prefix_values in self.prefixes.items():
-        #             for prefix_data in prefix_values:
-        #                 prefix = prefix_key + prefix_data.get("connect", "")
-        #                 if target_word_no_tackon.startswith(prefix):
-        #                     target_word_no_tackon = target_word_no_tackon[len(prefix):]
-        #                 # step 3
-        #                 if target_word in self.uniques:
-        #                     for u in self.uniques[target_word]:
-        #                         output_words.append(self.parts_of_speech_to_classes[u["part of speech"]](u))
-        #                 # step 4a
-        #                 for ending_key, ending_values in self.inflections.items():
-        #                     if target_word.endswith(ending_key):
+        if target_word.lower() in self.matches:
+            return self.matches[target_word.lower()]
         initial_words = self.remove_tackons(target_word.lower())
         output_words = []
         for word in initial_words:
             if word not in output_words:
                 output_words.append(word)
+        self.matches[target_word.lower()] = output_words
         return output_words

@@ -7,10 +7,10 @@ import re
 def noun_handler(parts, data, tags, definitions):
     return {
         "principal parts": [
-            "" if parts[0] == "zzz" else parts[0],
-            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
-            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
-            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+            parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -29,10 +29,10 @@ def noun_handler(parts, data, tags, definitions):
 def verb_handler(parts, data, tags, definitions):
     return {
         "principal parts": [
-            "" if parts[0] == "zzz" else parts[0],
-            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
-            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
-            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+            parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -51,10 +51,10 @@ def verb_handler(parts, data, tags, definitions):
 def adj_handler(parts, data, tags, definitions):
     return {
         "principal parts": [
-            "" if parts[0] == "zzz" else parts[0],
-            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
-            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
-            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+            parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -73,10 +73,10 @@ def adj_handler(parts, data, tags, definitions):
 def adv_handler(parts, data, tags, definitions):
     return {
         "principal parts": [
-            "" if parts[0] == "zzz" else parts[0],
-            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
-            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
-            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+            parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "type": data[1],
@@ -93,10 +93,10 @@ def adv_handler(parts, data, tags, definitions):
 def interj_handler(parts, data, tags, definitions):
     return {
         "principal parts": [
-            "" if parts[0] == "zzz" else parts[0],
-            "" if len(parts) <= 1 or parts[1] == "zzz" else parts[1],
-            "" if len(parts) <= 2 or parts[2] == "zzz" else parts[2],
-            "" if len(parts) <= 3 or parts[3] == "zzz" else parts[3],
+            parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "age": tags[0],
