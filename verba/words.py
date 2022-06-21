@@ -3,6 +3,7 @@
 
 class Word:
     """A Latin word."""
+
     classical_latin = {
         "A": "A",
         "a": "a",
@@ -228,10 +229,13 @@ class Noun(Word):
     ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
-            assert Word.category_matches((self.stem["which"], self.stem["variation"]), (
-                self.ending["which"],
-                self.ending["variation"],
-            )), "The stem and ending of this word are incompatible!"
+            assert Word.category_matches(
+                (self.stem["which"], self.stem["variation"]),
+                (
+                    self.ending["which"],
+                    self.ending["variation"],
+                ),
+            ), "The stem and ending of this word are incompatible!"
             if "gender" in self.stem and "gender" in self.ending:
                 assert Word.gender_matches(
                     self.stem["gender"], self.ending["gender"]
@@ -244,10 +248,13 @@ class Verb(Word):
     ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
-            assert Word.category_matches((self.stem["which"], self.stem["variation"]), (
-                self.ending["which"],
-                self.ending["variation"],
-            )), "The stem and ending of this word are incompatible!"
+            assert Word.category_matches(
+                (self.stem["which"], self.stem["variation"]),
+                (
+                    self.ending["which"],
+                    self.ending["variation"],
+                ),
+            ), "The stem and ending of this word are incompatible!"
             if "gender" in self.stem and "gender" in self.ending:
                 assert Word.gender_matches(
                     self.stem["gender"], self.ending["gender"]
@@ -260,10 +267,13 @@ class Adjective(Word):
     ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
-            assert Word.category_matches((self.stem["which"], self.stem["variation"]), (
-                self.ending["which"],
-                self.ending["variation"],
-            )), "The stem and ending of this word are incompatible!"
+            assert Word.category_matches(
+                (self.stem["which"], self.stem["variation"]),
+                (
+                    self.ending["which"],
+                    self.ending["variation"],
+                ),
+            ), "The stem and ending of this word are incompatible!"
             if "gender" in self.stem and "gender" in self.ending:
                 assert Word.gender_matches(
                     self.stem["gender"], self.ending["gender"]
@@ -299,7 +309,9 @@ class Interjection(Word):
 
 
 class Pronoun(Word):
-    def __init__(self, target, stem, ending=None, prefix=None, suffix=None, tackon=None):
+    def __init__(
+        self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
+    ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
             assert (self.stem["which"], self.stem["variation"]) == (
@@ -313,13 +325,18 @@ class Pronoun(Word):
 
 
 class Number(Word):
-    def __init__(self, target, stem, ending=None, prefix=None, suffix=None, tackon=None):
+    def __init__(
+        self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
+    ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
-            assert Word.category_matches((self.stem["which"], self.stem["variation"]), (
-                self.ending["which"],
-                self.ending["variation"],
-            )), "The stem and ending of this word are incompatible!"
+            assert Word.category_matches(
+                (self.stem["which"], self.stem["variation"]),
+                (
+                    self.ending["which"],
+                    self.ending["variation"],
+                ),
+            ), "The stem and ending of this word are incompatible!"
             if "gender" in self.stem and "gender" in self.ending:
                 assert Word.gender_matches(
                     self.stem["gender"], self.ending["gender"]
@@ -328,7 +345,9 @@ class Number(Word):
 
 # TODO: supines are weird - they're only in the inflections, not the dictionary - check the last three assertions
 class Supine(Word):
-    def __init__(self, target, stem, ending=None, prefix=None, suffix=None, tackon=None):
+    def __init__(
+        self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
+    ):
         # self.prefix = prefix
         # self.stem = stem
         # self.ending = ending
@@ -357,7 +376,9 @@ class Supine(Word):
 
 # TODO: packs are weird - they're only in the dictionary, not the inflections - check the last three assertions
 class Pack(Word):
-    def __init__(self, target, stem, ending=None, prefix=None, suffix=None, tackon=None):
+    def __init__(
+        self, target, stem, ending=None, prefix=None, suffix=None, tackon=None
+    ):
         # self.prefix = prefix
         # self.stem = stem
         # self.ending = ending
