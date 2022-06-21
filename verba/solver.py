@@ -20,6 +20,7 @@ class Solver:
         "NUM": Number,
         "PACK": Pack,
         "SUPINE": Supine,
+        "VPAR": VerbParticiple,
     }
 
     def __init__(self):
@@ -29,16 +30,16 @@ class Solver:
             self.suffixes = {}
             self.tackons = {}
             for a in json.load(f):
-                addon = a["word"]
-                if a["type"] == "prefix":
+                addon = Word.convert_to_classical_latin(a["word"].lower())
+                if a["type"] == "PREFIX":
                     if addon not in self.prefixes:
                         self.prefixes[addon] = []
                     self.prefixes[addon].append(a)
-                elif a["type"] == "suffix":
+                elif a["type"] == "SUFFIX":
                     if addon not in self.suffixes:
                         self.suffixes[addon] = []
                     self.suffixes[addon].append(a)
-                elif a["type"] == "tackon":
+                elif a["type"] == "TACKON":
                     if addon not in self.tackons:
                         self.tackons[addon] = []
                     self.tackons[addon].append(a)
@@ -48,72 +49,178 @@ class Solver:
             for d in dictline:
                 for p in d["principal parts"]:
                     if p:
-                        if p not in self.dictline:
-                            self.dictline[p] = []
-                        self.dictline[p].append(d)
+                        part = Word.convert_to_classical_latin(p.lower())
+                        if part not in self.dictline:
+                            self.dictline[part] = []
+                        self.dictline[part].append(d)
         with open(os.path.join(data_dir, "inflections.json")) as f:
             self.inflections = {}
             for i in json.load(f):
-                if i["ending"] not in self.inflections:
-                    self.inflections[i["ending"]] = []
-                self.inflections[i["ending"]].append(i)
+                inflection = Word.convert_to_classical_latin(i["ending"].lower())
+                if i["ending"].lower() not in self.inflections:
+                    self.inflections[inflection] = []
+                self.inflections[inflection].append(i)
         with open(os.path.join(data_dir, "uniques.json")) as f:
             self.uniques = {}
             for u in json.load(f):
-                if u["word"] not in self.uniques:
-                    self.uniques[u["word"]] = []
-                self.uniques[u["word"]].append(u)
+                unique = Word.convert_to_classical_latin(u["word"].lower())
+                if unique not in self.uniques:
+                    self.uniques[unique] = []
+                self.uniques[unique].append(u)
 
-    @staticmethod
-    def _part_of_speech(stem, suffix=None):
-        if suffix:
-            return suffix["to"]
-        return stem["part of speech"]
+    def find_words(self, full_target, target_word, tackon, prefix, ending, suffix):
+        # all_words = set()
+        all_words = []
+        # this is the tough part
+        # first, uniques
+        if target_word in self.uniques:
+            for u in self.uniques[target_word]:
+                try:
+                    # all_words.add(
+                    #     self.parts_of_speech_to_classes[
+                    #         self._part_of_speech(u, ending, prefix, suffix, tackon)
+                    #     ](full_target, u, ending, prefix, suffix, tackon)
+                    # )
+                    all_words.append(
+                        self.parts_of_speech_to_classes[
+                            Word.part_of_speech(u, ending, prefix, suffix, tackon)
+                        ](full_target, u, ending, prefix, suffix, tackon)
+                    )
+                except AssertionError:
+                    pass
+        # then, dictline
+        if target_word in self.dictline:
+            for d in self.dictline[target_word]:
+                try:
+                    # all_words.add(
+                    #     self.parts_of_speech_to_classes[
+                    #         self._part_of_speech(d, ending, prefix, suffix, tackon)
+                    #     ](full_target, d, ending, prefix, suffix, tackon)
+                    # )
+                    all_words.append(
+                        self.parts_of_speech_to_classes[
+                            Word.part_of_speech(d, ending, prefix, suffix, tackon)
+                        ](full_target, d, ending, prefix, suffix, tackon)
+                    )
+                except AssertionError:
+                    pass
+        return all_words
 
-
-    def remove_suffixes(self, target_word, tackon, prefix, ending):
+    def remove_suffixes(self, full_target, target_word, tackon, prefix, ending):
+        # all_words = set()
         all_words = []
         for suffix_key, suffix_values in self.suffixes.items():
             if target_word.endswith(suffix_key):
                 for suffix_data in suffix_values:
                     suffix = suffix_data.get("connect", "") + suffix_key
                     if target_word.endswith(suffix):
-                        pass
+                        # all_words.update(
+                        #     self.find_words(
+                        #         full_target,
+                        #         target_word[: -len(suffix)],
+                        #         tackon,
+                        #         prefix,
+                        #         ending,
+                        #         suffix_data,
+                        #     )
+                        # )
+                        all_words.extend(
+                            self.find_words(
+                                full_target,
+                                target_word[: -len(suffix)],
+                                tackon,
+                                prefix,
+                                ending,
+                                suffix_data,
+                            )
+                        )
+        # all_words.update(
+        #     self.find_words(full_target, target_word, tackon, prefix, ending, None)
+        # )
+        all_words.extend(
+            self.find_words(full_target, target_word, tackon, prefix, ending, None)
+        )
         return all_words
 
-
-    def remove_endings(self, target_word, tackon, prefix):
+    def remove_endings(self, full_target, target_word, tackon, prefix):
+        # all_words = set()
         all_words = []
         for ending_key, ending_values in self.inflections.items():
             if target_word.endswith(ending_key):
                 for ending_data in ending_values:
-                    pass
+                    # all_words.update(
+                    #     self.remove_suffixes(
+                    #         full_target,
+                    #         target_word[: -len(ending_key)],
+                    #         tackon,
+                    #         prefix,
+                    #         ending_data,
+                    #     )
+                    # )
+                    all_words.extend(
+                        self.remove_suffixes(
+                            full_target,
+                            target_word[: -len(ending_key)],
+                            tackon,
+                            prefix,
+                            ending_data,
+                        )
+                    )
+        # all_words.update(
+        #     self.remove_suffixes(full_target, target_word, tackon, prefix, None)
+        # )
+        all_words.extend(
+            self.remove_suffixes(full_target, target_word, tackon, prefix, None)
+        )
         return all_words
 
-
-    def remove_prefixes(self, target_word, tackon):
+    def remove_prefixes(self, full_target, target_word, tackon):
+        # all_words = set()
         all_words = []
         for prefix_key, prefix_values in self.prefixes.items():
             if target_word.startswith(prefix_key):
                 for prefix_data in prefix_values:
                     prefix = prefix_key + prefix_data.get("connect", "")
                     if target_word.startswith(prefix):
-                        # step 3 needs to be added here
-                        all_words.append(self.remove_endings(target_word[len(prefix):], tackon, prefix_data))
-        all_words.append(self.remove_endings(target_word, tackon, None))
+                        # all_words.update(
+                        #     self.remove_endings(
+                        #         full_target,
+                        #         target_word[len(prefix) :],
+                        #         tackon,
+                        #         prefix_data,
+                        #     )
+                        # )
+                        all_words.extend(
+                            self.remove_endings(
+                                full_target,
+                                target_word[len(prefix) :],
+                                tackon,
+                                prefix_data,
+                            )
+                        )
+        # all_words.update(self.remove_endings(full_target, target_word, tackon, None))
+        all_words.extend(self.remove_endings(full_target, target_word, tackon, None))
         return all_words
-
 
     def remove_tackons(self, target_word):
+        # all_words = set()
         all_words = []
         for tackon_key, tackon_values in self.tackons.items():
-            target_word = original
             if target_word.endswith(tackon_key):
                 for tackon_data in tackon_values:
-                    all_words.extend(self.remove_prefixes(target_word[:-len(tackon_key)], tackon_data))
-        all_words.extend(self.remove_prefixes(target_word, None))
+                    # all_words.update(
+                    #     self.remove_prefixes(
+                    #         target_word, target_word[: -len(tackon_key)], tackon_data
+                    #     )
+                    # )
+                    all_words.extend(
+                        self.remove_prefixes(
+                            target_word, target_word[: -len(tackon_key)], tackon_data
+                        )
+                    )
+        # all_words.update(self.remove_prefixes(target_word, target_word, None))
+        all_words.extend(self.remove_prefixes(target_word, target_word, None))
         return all_words
-
 
     def solve(self, target_word: str) -> list[Word]:
         """
@@ -145,11 +252,12 @@ class Solver:
             * ending: part of speech
             * tackon: with
         """
-        output_words = []
         # # step 1
-        if target_word in self.uniques:
-            for u in self.uniques[target_word]:
-                output_words.append(self.parts_of_speech_to_classes[u["part of speech"]](u))
+        # if target_word in self.uniques:
+        #     for u in self.uniques[target_word]:
+        #         output_words.append(
+        #             self.parts_of_speech_to_classes[u["part of speech"]](u)
+        #         )
         # # step 2a
         # for tackon_key, tackon_values in self.tackons.items():
         #     target_word = original
@@ -168,5 +276,9 @@ class Solver:
         #                 # step 4a
         #                 for ending_key, ending_values in self.inflections.items():
         #                     if target_word.endswith(ending_key):
-        output_words.extend(self.remove_tackons(target_word))
+        initial_words = self.remove_tackons(target_word.lower())
+        output_words = []
+        for word in initial_words:
+            if word not in output_words:
+                output_words.append(word)
         return output_words
