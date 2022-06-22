@@ -179,4 +179,5 @@ for inflection in inflections:
 
 # print(output)
 with open("../data/inflections.json", "w") as f:
-    json.dump(output, f, indent=2)
+    # json.dump(output, f, indent=2)
+    json.dump(output, f)

@@ -157,8 +157,8 @@ for item in lines:
             continue
         first_item_broken = [d.strip() for d in first_item.split(",")]
         definition_list.extend(first_item_broken)
-    if definition_list and definition_list[0].startswith("|"):
-        definition_list[0] = definition_list[0][1:]
+    # if definition_list and definition_list[0].startswith("|"):
+    #     definition_list[0] = definition_list[0][1:]
     part_of_speech = word_data[0]
     types.add(part_of_speech)
     functions_to_use = {
@@ -187,4 +187,5 @@ for item in lines:
 
 assert len(lines) == len(output)
 with open("../data/dictline.json", "w") as f:
-    json.dump(output, f, indent=2)
+    # json.dump(output, f, indent=2)
+    json.dump(output, f)

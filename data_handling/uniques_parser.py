@@ -82,4 +82,5 @@ for word, data, definitions in words:
 # print(output)
 # print(types)
 with open("../data/uniques.json", "w") as f:
-    json.dump(output, f, indent=2)
+    # json.dump(output, f, indent=2)
+    json.dump(output, f)

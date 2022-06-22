@@ -20,6 +20,21 @@ class Solver:
         "SUPINE": Supine,
         "VPAR": VerbParticiple,
     }
+    numeral_digits_to_numbers = {
+        "M": 1000,
+        "CM": 900,
+        "D": 500,
+        "CD": 400,
+        "C": 100,
+        "XC": 90,
+        "L": 50,
+        "XL": 40,
+        "X": 10,
+        "IX": 9,
+        "V": 5,
+        "IV": 4,
+        "I": 1,
+    }
     matches = {}
 
     def __init__(self):
@@ -178,6 +193,20 @@ class Solver:
         all_words.extend(self.remove_prefixes(target_word, target_word, None))
         return all_words
 
+    def numeral_to_number(self, numeral):
+        total = 0
+        while len(numeral) > 0:
+            value_found = False
+            for digit, value in self.numeral_digits_to_numbers.items():
+                if numeral[:len(digit)] == digit:
+                    total += value
+                    value_found = True
+                    numeral = numeral[len(digit) :]
+                    break
+            if not value_found:
+                raise ValueError("Invalid numeral: " + numeral)
+        return total
+
     def solve(self, target_word: str) -> list[Word]:
         """
         The meat of the solver system goes here.
@@ -208,12 +237,19 @@ class Solver:
             * ending: part of speech
             * tackon: with
         """
-        if target_word.lower() in self.matches:
-            return self.matches[target_word.lower()]
-        initial_words = self.remove_tackons(target_word.lower())
+        lowered_string = target_word.lower()
+        capitalized_string = target_word.upper()
+        if lowered_string in self.matches:
+            return self.matches[lowered_string]
+
+        initial_words = self.remove_tackons(lowered_string)
         output_words = []
         for word in initial_words:
             if word not in output_words:
                 output_words.append(word)
-        self.matches[target_word.lower()] = output_words
+        try:
+            output_words.append(self.numeral_to_number(capitalized_string))
+        except ValueError:
+            pass
+        self.matches[lowered_string] = output_words
         return output_words

@@ -117,4 +117,5 @@ for word, data, definitions in words:
             definition_list[0] = " ".join(definition_list[0].split(" ")[1:])
         output.append(word_info_for_json)
 with open("../data/addons.json", "w") as f:
-    json.dump(output, f, indent=2)
+    # json.dump(output, f, indent=2)
+    json.dump(output, f)
