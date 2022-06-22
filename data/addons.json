@@ -2198,7 +2198,7 @@
       "-orous",
       "-ory",
       "having to do with",
-      "pertaining to",
+      "pretaining to",
       "tending to"
     ]
   },
@@ -4483,7 +4483,7 @@
     "word": "que",
     "with": "X",
     "definitions": [
-      "and",
+      "= and",
       "completes plerus/uter"
     ],
     "tackon_type": "-que"
@@ -4644,7 +4644,7 @@
     "with_variation": 2,
     "with_type": "DEMONS",
     "definitions": [
-      "same"
+      "w/i-ea-id   idem => same"
     ],
     "tackon_type": "TACKON"
   },
@@ -4656,7 +4656,8 @@
     "with_variation": 0,
     "with_type": "PERS",
     "definitions": [
-      "with"
+      "with",
+      "[w/ABL  mecum => at my house/with me]"
     ],
     "tackon_type": "TACKON"
   },
@@ -4740,7 +4741,7 @@
     "with_variation": 0,
     "with_type": "INDEF",
     "definitions": [
-      "whoever it be",
+      "w/qui => whoever it be",
       "whatever",
       "each",
       "each one",
@@ -4757,7 +4758,7 @@
     "with_variation": 0,
     "with_type": "INDEF",
     "definitions": [
-      "any/somebody",
+      "w/qui =>  any/somebody",
       "any",
       "some",
       "any/something"
@@ -4806,6 +4807,19 @@
       "which",
       "I insist/meant",
       "why/what pray"
+    ],
+    "tackon_type": "PACKON"
+  },
+  {
+    "type": "TACKON",
+    "word": "cum",
+    "with": "PACK",
+    "with_which": 1,
+    "with_variation": 0,
+    "with_type": "REL",
+    "definitions": [
+      "w/qui pron with ABL => with what",
+      "with whom"
     ],
     "tackon_type": "PACKON"
   },

@@ -47,12 +47,13 @@ class Solver:
             self.dictline = {}
             for d in dictline:
                 for i, p in enumerate(d["principal parts"]):
-                    if p:
-                        d["principal parts"][i] = p.replace("zzz", "")
-                        if d["principal parts"][i]:
-                            part = Word.convert_to_classical_latin(d["principal parts"][i].lower())
-                        else:
-                            part = ""
+                    if not p and d["principal parts"] == ["s", "", "fu", "fut"]:
+                        part = ""
+                        if part not in self.dictline:
+                            self.dictline[part] = []
+                        self.dictline[part].append(d)
+                    elif p:
+                        part = Word.convert_to_classical_latin(p.lower())
                         if part not in self.dictline:
                             self.dictline[part] = []
                         self.dictline[part].append(d)

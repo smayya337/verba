@@ -1,6 +1,7 @@
 # type: ignore
 # TODO: too many made-up words are abusing the ability to not have anything in most of the fields - need to design a better way to handle this while allowing valid cases (e.g. abesse)
 
+
 class Word:
     """A Latin word."""
 
@@ -123,8 +124,14 @@ class Word:
     def create_word(self):
         if "principal parts" in self.stem:
             if self.suffix and "from_part" in self.suffix:
+                assert (
+                    len(self.stem["principal parts"]) >= self.suffix["from_part"]
+                ), "The stem and suffix of this word are incompatible!"
                 self.word = self.stem["principal parts"][self.suffix["from_part"] - 1]
             elif self.ending:
+                assert len(self.stem["principal parts"]) >= self.ending.get(
+                    "key", 1
+                ), "The stem and ending of this word are incompatible!"
                 self.word = self.stem["principal parts"][self.ending.get("key", 1) - 1]
             else:
                 self.word = self.stem["principal parts"][0]
@@ -157,7 +164,11 @@ class Word:
 
     @staticmethod
     def part_of_speech_matches(part_of_speech_1: str, part_of_speech_2: str) -> bool:
-        return part_of_speech_1 == part_of_speech_2 or part_of_speech_1 == "X" or part_of_speech_2 == "X"
+        return (
+            part_of_speech_1 == part_of_speech_2
+            or part_of_speech_1 == "X"
+            or part_of_speech_2 == "X"
+        )
 
     @staticmethod
     def category_matches(cat_1: tuple, cat_2: tuple) -> bool:
@@ -179,28 +190,26 @@ class Word:
             part_of_speech = stem["part of speech"]
         else:
             part_of_speech = "X"
-        if prefix:
-            assert (
-                Word.part_of_speech_matches(part_of_speech, prefix["from"])
-            )
-            if prefix["to"] != "X":
-                part_of_speech = prefix["to"]
         if suffix:
-            assert (
-                Word.part_of_speech_matches(part_of_speech, suffix["from"])
-            )
+            assert Word.part_of_speech_matches(part_of_speech, suffix["from"])
             if suffix["to"] != "X":
                 part_of_speech = suffix["to"]
+        if prefix:
+            assert Word.part_of_speech_matches(part_of_speech, prefix["from"])
+            if prefix["to"] != "X":
+                part_of_speech = prefix["to"]
         if ending and ending["part of speech"] != "X":
-            if part_of_speech == "X" or ending["part of speech"] == "SUPINE" or ending["part of speech"] == "VPAR":
+            if (
+                part_of_speech == "X"
+                or ending["part of speech"] == "SUPINE"
+                or ending["part of speech"] == "VPAR"
+            ):
                 part_of_speech = ending["part of speech"]
             assert Word.part_of_speech_matches(
                 part_of_speech, ending["part of speech"]
             ) or (part_of_speech == "PACK" and ending["part of speech"] == "PRON")
         if tackon:
-            assert (
-                Word.part_of_speech_matches(part_of_speech, tackon["with"])
-            )
+            assert Word.part_of_speech_matches(part_of_speech, tackon["with"]) or (part_of_speech == "PRON" and tackon["with"] == "PACK")
         return part_of_speech
 
     @staticmethod
@@ -417,9 +426,12 @@ class Pronoun(Word):
     ):
         super().__init__(target, stem, ending, prefix, suffix, tackon)
         if self.ending:
-            assert (self.stem["which"], self.stem["variation"]) == (
-                self.ending["which"],
-                self.ending["variation"],
+            assert Word.category_matches(
+                (self.stem["which"], self.stem["variation"]),
+                (
+                    self.ending["which"],
+                    self.ending["variation"],
+                ),
             ), "The stem and ending of this word are incompatible!"
             if "gender" in self.stem and "gender" in self.ending:
                 assert Word.gender_matches(

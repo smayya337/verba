@@ -1181,6 +1181,9 @@ PACKON w/qui => who then/in the world; which, I insist/meant; why/what pray;
 --PACK    1  0 ADJECT
 --PACKON w/qui => who then; what a thing; which I meant; why, pray;
 TACKON cum
+PACK    1  0 REL
+PACKON w/qui pron with ABL => with what, with whom;
+TACKON cum
 PACK    1  0 INTERR
 PACKON w/qui pron with ABL => with what, with whom;
 TACKON vis

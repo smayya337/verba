@@ -5,9 +5,12 @@ import re
 
 
 def noun_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -21,16 +24,15 @@ def noun_handler(parts, data, tags, definitions):
         "source": tags[4],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 def verb_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -43,17 +45,16 @@ def verb_handler(parts, data, tags, definitions):
         "source": tags[4],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 # and pron
 def adj_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -66,17 +67,16 @@ def adj_handler(parts, data, tags, definitions):
         "source": tags[4],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 # and prep
 def adv_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "type": data[1],
@@ -87,17 +87,16 @@ def adv_handler(parts, data, tags, definitions):
         "source": tags[4],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 # and conj
 def interj_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            "" if len(parts) <= 1 else parts[1],
+            "" if len(parts) <= 2 else parts[2],
+            "" if len(parts) <= 3 else parts[3],
         ],
         "part of speech": data[0],
         "age": tags[0],
@@ -107,16 +106,15 @@ def interj_handler(parts, data, tags, definitions):
         "source": tags[4],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 def num_handler(parts, data, tags, definitions):
-    output = {
+    return {
         "principal parts": [
             parts[0],
+            parts[1] if len(parts) > 1 else "",
+            parts[2] if len(parts) > 2 else "",
+            parts[3] if len(parts) > 3 else "",
         ],
         "part of speech": data[0],
         "which": int(data[1]),
@@ -130,10 +128,6 @@ def num_handler(parts, data, tags, definitions):
         "source": tags[5],
         "definitions": definitions,
     }
-    for n in range(1, 4):
-        if len(parts) > n:
-            output["principal parts"].append(parts[n])
-    return output
 
 
 with open("../data/DICTLINE.DATA") as f:
@@ -146,7 +140,6 @@ with open("../data/DICTLINE.DATA") as f:
 lines = [line.split("--")[0].strip() for line in lines]
 lines = [line for line in lines if line]
 
-# words = [(lines[i], lines[i+1], lines[i+2]) for i in range(0, len(lines), 3)]
 output = []
 types = set()
 
@@ -180,15 +173,15 @@ for item in lines:
         "PACK": adj_handler,
     }
     if part_of_speech in functions_to_use:
-        # print(word_parts)
         word_info_for_json = functions_to_use[part_of_speech](
             word_parts, word_data, word_tags, definition_list
         )
+        for i in range(len(word_info_for_json["principal parts"])):
+            if word_info_for_json["principal parts"][i] == "zzz":
+                word_info_for_json["principal parts"][i] = ""
         output.append(word_info_for_json)
 
 print(types)
 assert len(lines) == len(output)
-# print(output)
-# print(types)
 with open("../data/dictline.json", "w") as f:
     json.dump(output, f, indent=2)
