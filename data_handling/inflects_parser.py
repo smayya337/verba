@@ -1,3 +1,4 @@
+from verba.words import Word
 import json
 
 
@@ -11,7 +12,9 @@ def noun_handler(inflection):
         "gender": inflection[5],
         "key": int(inflection[6]),
         "size": int(inflection[7]),
-        "ending": inflection[8] if int(inflection[7]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[8])
+        if int(inflection[7]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -29,7 +32,9 @@ def verb_handler(inflection):
         "number": inflection[7],
         "key": int(inflection[8]),
         "size": int(inflection[9]),
-        "ending": inflection[10] if int(inflection[9]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[10])
+        if int(inflection[9]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -46,7 +51,9 @@ def number_handler(inflection):
         "type": inflection[6],
         "key": int(inflection[7]),
         "size": int(inflection[8]),
-        "ending": inflection[9] if int(inflection[8]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[9])
+        if int(inflection[8]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -65,7 +72,9 @@ def vpar_handler(inflection):
         "mood": inflection[8],
         "key": int(inflection[9]),
         "size": int(inflection[10]),
-        "ending": inflection[11] if int(inflection[10]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[11])
+        if int(inflection[10]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -77,7 +86,9 @@ def prep_handler(inflection):
         "case": inflection[1],
         "key": int(inflection[2]),
         "size": int(inflection[3]),
-        "ending": inflection[4] if int(inflection[3]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[4])
+        if int(inflection[3]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -89,7 +100,9 @@ def adverb_handler(inflection):
         "level": inflection[1],
         "key": int(inflection[2]),
         "size": int(inflection[3]),
-        "ending": inflection[4] if int(inflection[3]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[4])
+        if int(inflection[3]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -100,7 +113,9 @@ def conj_handler(inflection):
         "part of speech": inflection[0],
         "key": int(inflection[1]),
         "size": int(inflection[2]),
-        "ending": inflection[3] if int(inflection[2]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[3])
+        if int(inflection[2]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }
@@ -117,7 +132,9 @@ def adj_handler(inflection):
         "level": inflection[6],
         "key": int(inflection[7]),
         "size": int(inflection[8]),
-        "ending": inflection[9] if int(inflection[8]) > 0 else "",
+        "ending": Word.convert_to_classical_latin(inflection[9])
+        if int(inflection[8]) > 0
+        else "",
         "age": inflection[-2],
         "frequency": inflection[-1],
     }

@@ -1,3 +1,4 @@
+from verba.words import Word
 import json
 import re
 
@@ -8,7 +9,7 @@ def prefix_handler(word, data):
     word_connect = word[2] if len(word) > 2 else None
     output = {
         "type": word_type,
-        "word": word_name,
+        "word": Word.convert_to_classical_latin(word_name),
         "from": data[0],
         "to": data[1],
     }
@@ -23,7 +24,7 @@ def suffix_handler(word, data):
     word_connect = word[2] if len(word) > 2 else None
     output = {
         "type": word_type,
-        "word": word_name,
+        "word": Word.convert_to_classical_latin(word_name),
         "from": data[0],
         "from_part": int(data[1]),
         "to": data[2],
@@ -51,7 +52,7 @@ def tackon_handler(word, data):
     goes_with = data[0]
     output = {
         "type": word_type,
-        "word": word_name,
+        "word": Word.convert_to_classical_latin(word_name),
         "with": goes_with,
     }
     if goes_with == "N":

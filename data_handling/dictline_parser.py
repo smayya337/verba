@@ -1,5 +1,6 @@
 # type: ignore
 
+from verba.words import Word
 import json
 import re
 
@@ -179,9 +180,11 @@ for item in lines:
         for i in range(len(word_info_for_json["principal parts"])):
             if word_info_for_json["principal parts"][i] == "zzz":
                 word_info_for_json["principal parts"][i] = ""
+            word_info_for_json["principal parts"][i] = Word.convert_to_classical_latin(
+                word_info_for_json["principal parts"][i].lower()
+            )
         output.append(word_info_for_json)
 
-print(types)
 assert len(lines) == len(output)
 with open("../data/dictline.json", "w") as f:
     json.dump(output, f, indent=2)

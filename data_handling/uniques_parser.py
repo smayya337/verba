@@ -1,3 +1,4 @@
+from verba.words import Word
 import json
 import re
 
@@ -74,7 +75,7 @@ for word, data, definitions in words:
     if part_of_speech in functions_to_use:
         # print(word, word_info)
         word_info_for_json = functions_to_use[part_of_speech](word_info)
-        word_info_for_json["word"] = word
+        word_info_for_json["word"] = Word.convert_to_classical_latin(word)
         word_info_for_json["definitions"] = definition_list
         output.append(word_info_for_json)
 

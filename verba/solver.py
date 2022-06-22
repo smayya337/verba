@@ -53,10 +53,9 @@ class Solver:
                             self.dictline[part] = []
                         self.dictline[part].append(d)
                     elif p:
-                        part = Word.convert_to_classical_latin(p.lower())
-                        if part not in self.dictline:
-                            self.dictline[part] = []
-                        self.dictline[part].append(d)
+                        if p not in self.dictline:
+                            self.dictline[p] = []
+                        self.dictline[p].append(d)
         with open(os.path.join(data_dir, "inflections.json")) as f:
             self.inflections = {}
             for i in json.load(f):
@@ -102,10 +101,10 @@ class Solver:
     def remove_suffixes(self, full_target, target_word, tackon, prefix, ending):
         all_words = []
         for suffix_key, suffix_values in self.suffixes.items():
-            if target_word.endswith(suffix_key):
+            if target_word[-len(suffix_key) :] == suffix_key:
                 for suffix_data in suffix_values:
                     suffix = suffix_data.get("connect", "") + suffix_key
-                    if target_word.endswith(suffix) and Word.valid(
+                    if target_word[-len(suffix) :] and Word.valid(
                         None, ending, prefix, suffix_data, tackon
                     ):
                         all_words.extend(
@@ -126,7 +125,7 @@ class Solver:
     def remove_endings(self, full_target, target_word, tackon, prefix):
         all_words = []
         for ending_key, ending_values in self.inflections.items():
-            if target_word.endswith(ending_key):
+            if target_word[-len(ending_key) :] == ending_key:
                 for ending_data in ending_values:
                     if Word.valid(None, ending_data, prefix, None, tackon):
                         all_words.extend(
@@ -146,10 +145,10 @@ class Solver:
     def remove_prefixes(self, full_target, target_word, tackon):
         all_words = []
         for prefix_key, prefix_values in self.prefixes.items():
-            if target_word.startswith(prefix_key):
+            if target_word[: len(prefix_key)] == prefix_key:
                 for prefix_data in prefix_values:
                     prefix = prefix_key + prefix_data.get("connect", "")
-                    if target_word.startswith(prefix) and Word.valid(
+                    if target_word[: len(prefix)] == prefix and Word.valid(
                         None, None, prefix_data, None, tackon
                     ):
                         all_words.extend(
@@ -166,7 +165,7 @@ class Solver:
     def remove_tackons(self, target_word):
         all_words = []
         for tackon_key, tackon_values in self.tackons.items():
-            if target_word.endswith(tackon_key):
+            if target_word[-len(tackon_key) :] == tackon_key:
                 for tackon_data in tackon_values:
                     if Word.valid(None, None, None, None, tackon_data):
                         all_words.extend(

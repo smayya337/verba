@@ -1,5 +1,4 @@
 # type: ignore
-# TODO: too many made-up words are abusing the ability to not have anything in most of the fields - need to design a better way to handle this while allowing valid cases (e.g. abesse)
 
 
 class Word:
@@ -209,7 +208,9 @@ class Word:
                 part_of_speech, ending["part of speech"]
             ) or (part_of_speech == "PACK" and ending["part of speech"] == "PRON")
         if tackon:
-            assert Word.part_of_speech_matches(part_of_speech, tackon["with"]) or (part_of_speech == "PRON" and tackon["with"] == "PACK")
+            assert Word.part_of_speech_matches(part_of_speech, tackon["with"]) or (
+                part_of_speech == "PRON" and tackon["with"] == "PACK"
+            )
         return part_of_speech
 
     @staticmethod
